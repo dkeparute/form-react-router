@@ -99,9 +99,7 @@ const Forgot = () => {
             Forgot Password
           </button>
         </form>
-        <div className="header">
-          <i class="fas fa-arrow-circle-left user"></i>
-        </div>
+
         <Link className="back-button" to="/login">
           Back to log in
         </Link>
