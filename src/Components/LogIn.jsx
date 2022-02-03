@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Form from "../Forms";
-import Logo from "../logo.png";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -60,23 +59,14 @@ function Login() {
   // CONTENT
   return (
     <div className="general">
-      {/* LOGO */}
-      <img
-        src={Logo}
-        alt="logo"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "10vh",
-        }}
-      />
       {/* LOGIN BOX */}
+
       <div className="form">
         {/* HEADER */}
+
         <div className="header">
-          <i className="fas fa-lock user"></i>
-          <h1>Log in form</h1>
+          <i class="fas fa-key user"></i>
+          <h1>Login</h1>
         </div>
         {/* FORM FUNCTIONALITY */}
         <form
@@ -162,7 +152,7 @@ function Login() {
             </div>
           </div>
           <button className="signIn" type="submit">
-            Log In
+            Login
           </button>
         </form>
       </div>

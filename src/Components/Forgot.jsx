@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Form from "../Forms";
-import Logo from "../logo.png";
 
 const Forgot = () => {
   const [email, setEmail] = useState("");
@@ -41,33 +40,21 @@ const Forgot = () => {
   };
   // CONTENT
   return (
-    <div className="general">
-      {/* LOGO */}
-      <img
-        src={Logo}
-        alt="logo"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "10vh",
-        }}
-      />
+    <div className="content">
       {/* FORM BOX */}
-      <div className="form">
+
+      <div className="form-box">
         {/* HEADER */}
-        <div className="header">
-          <i class="fas fa-envelope user"></i>
-          <h2>Forgot password</h2>
-        </div>
+        <i className="fas fa-envelope mail"></i>
+
         {/* FORM FUNCTIONALITY */}
         <form
-          className="inside-form"
+          className="inside-form-box"
           method="POST"
           onSubmit={forgotPassword}
           autoComplete={"off"}
         >
-          <div className="username">
+          <div className="email">
             <input
               type="email"
               className={`form-control ${
@@ -94,14 +81,16 @@ const Forgot = () => {
                 : ""}
             </div>
           </div>
-
-          <button type="submit" className="signIn">
-            Forgot Password
-          </button>
+          <div className="common-btn">
+            {" "}
+            <button type="submit" className="btn">
+              Get password
+            </button>
+          </div>
         </form>
 
-        <Link className="back-button" to="/login">
-          Back to log in
+        <Link className="back-btn" to="/login">
+          Back to login
         </Link>
       </div>
     </div>

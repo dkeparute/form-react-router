@@ -1,0 +1,98 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .form-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 450px;
+    margin: 50px auto;
+    border-radius: 5px;
+    background: linear-gradient(#00d8e4, #053247, #065a84);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+
+    .mail {
+      background: -webkit-linear-gradient(#053247, #065a84);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: -6rem;
+    }
+
+    .inside-form-box {
+      margin-top: 5rem;
+
+      .email {
+        padding-bottom: 3rem;
+        width: 320px;
+
+        ::placeholder {
+          color: #e4f2ff;
+          opacity: 0.5;
+        }
+
+        .form-control {
+          background-color: transparent;
+          border: none;
+          border-bottom: 2px solid #00d8e4;
+          border-top: 0px;
+          font-weight: bold;
+          outline: 0;
+          margin-bottom: 20px;
+          padding-left: 0px;
+          color: #e4f2ff;
+          width: 100%;
+        }
+      }
+    }
+
+    .btn {
+      background-color: #053247;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      width: 50%;
+      margin-left: 25%;
+      border: 2px solid #00d8e4;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      color: #e4f2ff;
+      text-transform: uppercase;
+      transition: all 0.3s ease-in-out;
+      font-size: 12px;
+    }
+
+    .btn:hover {
+      color: #0a0a0a;
+      border: 2px solid #00d8e4;
+      font-weight: bold;
+      background-color: #00d8e4;
+      box-shadow: 0px 10px 13px -6px rgb(0 0 0 / 20%),
+        0px 20px 31px 3px rgb(0 0 0 / 14%), 0px 8px 38px 7px rgb(0 0 0 / 12%);
+    }
+  }
+  .back-btn {
+    margin: 1rem;
+    color: #00d8e4;
+    font-size: 12px;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+  .back-btn:hover {
+    color: #e4f2ff;
+  }
+  .text-start {
+    color: #00d8e4;
+    font-size: 10px;
+  }
+}
