@@ -46,7 +46,7 @@ const Forgot = () => {
       <div className="form-box">
         {/* HEADER */}
         <i className="fas fa-envelope mail"></i>
-
+        <h1>Password</h1>
         {/* FORM FUNCTIONALITY */}
         <form
           className="inside-form-box"
@@ -82,7 +82,6 @@ const Forgot = () => {
             </div>
           </div>
           <div className="common-btn">
-            {" "}
             <button type="submit" className="btn">
               Get password
             </button>
