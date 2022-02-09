@@ -67,7 +67,7 @@ const Forgot = () => {
               id="email"
               name="email"
               value={email}
-              placeholder="Insert Email"
+              placeholder="Email"
               onChange={(e) => setEmail(e.target.value)}
             />
 
