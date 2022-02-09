@@ -45,8 +45,10 @@ const Forgot = () => {
 
       <div className="form-box">
         {/* HEADER */}
-        <i className="fas fa-envelope mail"></i>
-        <h1>Password</h1>
+        <div className="header">
+          <i className="fas fa-envelope mail"></i>
+          <h1>Password</h1>
+        </div>
         {/* FORM FUNCTIONALITY */}
         <form
           className="inside-form-box"

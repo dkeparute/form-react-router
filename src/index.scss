@@ -1,24 +1,25 @@
 @import "./Login.scss";
 @import "./Forgot.scss";
 
-// position: absolute;
-// top: 50%;
-// left: 50%;
-// transform: translate(-50%, -50%);
-
-body * {
+* {
   box-sizing: border-box;
 }
 
 body {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url(./rBjn7e.jpg);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-image: url(./cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: 10% 50%;
-  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
